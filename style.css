@@ -7,6 +7,8 @@
     --corBranca: #fff;
     --corTitulo: #1f1f1f;
     --corParagrafo: #474747;
+    --corEntrada: #47474710;
+    --corEntradaTexto: #66666685;
 }
 
 * {
@@ -14,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    color: var(--corParagrafo);
 }
 
 html, body {
@@ -51,7 +54,9 @@ main {
         margin: 0 auto;
         background-color: var(--corBranca);
         padding: 1.875rem;
-        color: var(--corParagrafo);
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
 
         .titulo {
             h1{
@@ -68,5 +73,58 @@ main {
                 text-align: center;
             }
         }
+        .entrada {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            div {
+                
+                label{
+                    font-size: .75rem;
+                    font-weight: 700;
+                    letter-spacing: .0469rem;
+                    line-height: 1.5rem;
+                }
+
+                input {
+                    width: 100%;
+                    background-color: var(--corEntrada);
+                    border: none;
+                    border-radius: .5rem;
+                    line-height: 1.75rem;
+                    letter-spacing: .0469rem;
+                    padding: 1rem .75rem;
+                    font-size: 1rem;
+
+                    &::placeholder {
+                        color: var(--corEntradaTexto);
+                    }
+
+                    &:focus {
+                        outline-color: var(--corDestaque);
+                    }
+
+                    
+                    }
+                }
+            }
+            .recuperacao {
+                font-size: .875rem;
+                font-weight: 500;
+                line-height: 1.375rem;
+                letter-spacing: .0156rem;
+
+            }
+        button {
+            height: 3rem;
+            border: none;
+            border-radius: .5rem;
+            background-color: var(--corDestaque);
+            color: var(--corBranca);
+            font-weight: 700;
+            letter-spacing: 0.469rem;
+            font-size: 1rem;
+        }
+        }
     }
-}
