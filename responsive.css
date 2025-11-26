@@ -1,0 +1,34 @@
+
+@media (width >= 480px) {
+ footer {
+    padding: 3.125rem 10% 2.8125rem;
+    
+    .informacoes {
+        justify-content: space-between;
+  }
+ }
+}
+
+@media (width >= 768px) {
+    .box-informacoes-contato {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        
+        div {
+            width: 100%;
+        }
+    }
+}
+@media (width >= 1024px){
+    footer {
+        padding: 3.125rem 5% 2.8125;
+    
+    .box {
+        display:flex;
+        justify-content: space-between;
+        
+       
+    }
+}
+}
